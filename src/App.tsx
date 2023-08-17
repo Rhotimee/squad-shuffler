@@ -33,21 +33,21 @@ function App() {
             Squad Shuffler
           </h1>
           <p className="mt-1 text-sm leading-6 text-gray-600 text-center">
-            The names of the players should be seperated by a space or comma.
+            The names of the players should be sperated by a space or comma.
           </p>
         </div>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="">
             <label
-              htmlFor="defenders"
+              htmlFor="numPlayersPerTeam"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
               Players per team
             </label>
             <input
-              id="defenders"
+              id="numPlayersPerTeam"
               type="number"
-              className="block rounded-md p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block rounded-md border p-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               onChange={(e) => setNumPlayersPerTeam(e.target.value)}
               value={numPlayersPerTeam}
             />
@@ -63,7 +63,7 @@ function App() {
             <textarea
               id="defenders"
               rows={3}
-              className="block w-full rounded-md p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full rounded-md border p-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               onChange={(e) => setDefenders(e.target.value)}
               value={defenders}
             />
@@ -78,7 +78,7 @@ function App() {
             <textarea
               id="attackers"
               rows={3}
-              className="block w-full rounded-md p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full rounded-md border p-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               onChange={(e) => setAttackers(e.target.value)}
               value={attackers}
             />
@@ -93,7 +93,7 @@ function App() {
             <textarea
               id="keepers"
               rows={3}
-              className="block w-full rounded-md p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full rounded-md border p-1.5 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               onChange={(e) => setKeepers(e.target.value)}
               value={keepers}
             />

@@ -49,6 +49,7 @@ function App() {
               type="number"
               className="block rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               onChange={(e) => setNumPlayersPerTeam(e.target.value)}
+              value={numPlayersPerTeam}
             />
           </div>
 
@@ -64,6 +65,7 @@ function App() {
               rows={3}
               className="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               onChange={(e) => setDefenders(e.target.value)}
+              value={defenders}
             />
           </div>
           <div>
@@ -78,6 +80,7 @@ function App() {
               rows={3}
               className="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               onChange={(e) => setAttackers(e.target.value)}
+              value={attackers}
             />
           </div>
           <div>
@@ -92,6 +95,7 @@ function App() {
               rows={3}
               className="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               onChange={(e) => setKeepers(e.target.value)}
+              value={keepers}
             />
           </div>
           <div className="flex items-center justify-center">

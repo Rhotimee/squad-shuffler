@@ -1,16 +1,8 @@
 import { useState, FormEvent } from "react";
-import { generateShuffledTeams, Player } from "./utils/squad-generator";
+import { generateShuffledTeams } from "./utils/squad-generator";
 import TeamList from "./TeamList.tsx";
-
-function formatPlayers(players: string, playerType: Player["type"]): Player[] {
-  return players
-    .split(/[\s,]+/)
-    .filter(Boolean)
-    .map((player) => ({
-      name: player,
-      type: playerType,
-    }));
-}
+import { formatPlayers } from "./utils/format-players";
+import { Player } from "./types";
 
 function App() {
   const [defenders, setDefenders] = useState("");

@@ -1,7 +1,4 @@
-export type Player = {
-  name: string;
-  type: "attacker" | "defender" | "keeper";
-};
+import { Player } from "../types";
 
 // Fisher-Yates Shuffle
 // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
@@ -24,7 +21,7 @@ type GenerateShuffledTeamsArgs = {
   defenders: Player[];
   keepers: Player[];
   numPlayersPerTeam: number;
-}
+};
 
 export function generateShuffledTeams({
   attackers,

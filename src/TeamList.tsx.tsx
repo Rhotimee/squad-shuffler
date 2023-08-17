@@ -1,4 +1,4 @@
-import { Player } from "./utils/squad-generator";
+import { Player } from "./types";
 
 type TeamListProps = {
   teams: Player[][];
